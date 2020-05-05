@@ -7,7 +7,7 @@ const ObjectId = require('mongodb').ObjectID
 const MongoClient = require('mongodb').MongoClient;
 
 const uri = "mongodb+srv://guilhermesoure:mongoteste2020@testecrudnew-axryn.mongodb.net/test?retryWrites=true&w=majority";
- 
+
 MongoClient.connect(uri, (err, client) => {
   if (err) return console.log(err)
   db = client.db('TesteCrudNew') // coloque o nome do seu DB

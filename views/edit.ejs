@@ -14,11 +14,11 @@
       <label for="Sobrenome"><b>Sobrenome</b></label><br>
       <input type="text" value="<%= details.surname %>" name="surname"><br><br>
       <label for="Genero"><b>Genero</b></label><br>
-      <input type="radio" id="Homem" name="gender" value="Homem">
+      <input type="radio" id="Homem" name="gender" value="Homem"  <%= details.gender == 'Homem' ? 'checked' : '' %>  >
       <label for="Homem">Homem</label><br>
-      <input type="radio" id="Mulher" name="gender" value="Mulher">
+      <input type="radio" id="Mulher" name="gender" value="Mulher"  <%= details.gender == 'Mulher' ? 'checked' : '' %>>
       <label for="Mulher">Mulher</label><br>
-      <input type="radio" id="Outro" name="gender" value="Outro">
+      <input type="radio" id="Outro" name="gender" value="Outro"  <%= details.gender == 'Outro' ? 'checked' : '' %>>
       <label for="Outro">Outro</label><br><br>
       
       <label for="idade"><b>Idade</b></label><br>
@@ -38,45 +38,45 @@
 
       <label for="datanascimento"><b>Data de nascimento</b></label><br>
       <input type="date" value="<%= details.datanascimento %>" name="datanascimento"><br><br>
-
+      
       <label for="Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?"><b>Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?</b></label><br><br>
-      <input type="radio" id="Ótimo" name="medidas" value="Ótimo">
+      <input type="radio" id="Ótimo" name="medidas" value="Ótimo" <%= details.medidas == 'Ótimo' ? 'checked' : '' %>>
       <label for="Ótimo">Ótimo</label><br>
-      <input type="radio" id="Regular" name="medidas" value="Regular">
+      <input type="radio" id="Regular" name="medidas" value="Regular" <%= details.medidas == 'Regular' ? 'checked' : '' %>>
       <label for="Regular">Regular</label><br>
-      <input type="radio" id="Péssimo" name="medidas" value="Péssimo">
+      <input type="radio" id="Péssimo" name="medidas" value="Péssimo" <%= details.medidas == 'Péssimo' ? 'checked' : '' %>>
       <label for="Péssimo">Péssimo</label><br><br>
 
       <label for="Como você avalia o investimento feito pelo Governo Federal no combate ao COVID-19?"><b>Como você avalia o investimento feito pelo Governo Federal no combate ao COVID-19?</b></label><br><br>
-      <input type="radio" id="Ótimo" name="investimento" value="Ótimo">
+      <input type="radio" id="Ótimo" name="investimento" value="Ótimo" <%= details.investimento =='Ótimo' ? 'checked' : '' %>>
       <label for="Ótimo">Ótimo</label><br>
-      <input type="radio" id="Regular" name="investimento" value="Regular">
+      <input type="radio" id="Regular" name="investimento" value="Regular" <%= details.investimento == 'Regular' ? 'checked' : '' %>>
       <label for="Regular">Regular</label><br>
-      <input type="radio" id="Péssimo" name="investimento" value="Péssimo">
+      <input type="radio" id="Péssimo" name="investimento" value="Péssimo" <%= details.investimento == 'Péssimo' ? 'checked' : '' %>>
       <label for="Péssimo">Péssimo</label><br><br>
      
       <label for="Como você avalia as medidas de prevenção adotadas pelo Governo Federal no combate ao COVID-19?"><b>Como você avalia as medidas de prevenção adotadas pelo Governo Federal no combate ao COVID-19?</b></label><br><br>
-      <input type="radio" id="Ótimo" name="prevencao" value="Ótimo">
+      <input type="radio" id="Ótimo" name="prevencao" value="Ótimo" <%= details.prevencao == 'Ótimo' ? 'checked' : '' %>>
       <label for="Ótimo">Ótimo</label><br>
-      <input type="radio" id="Regular" name="prevencao" value="Regular">
+      <input type="radio" id="Regular" name="prevencao" value="Regular" <%= details.prevencao == 'Regular' ? 'checked' : '' %>>
       <label for="Regular">Regular</label><br>
-      <input type="radio" id="Péssimo" name="prevencao" value="Péssimo">
+      <input type="radio" id="Péssimo" name="prevencao" value="Péssimo" <%= details.prevencao == 'Péssimo' ? 'checked' : '' %>>
       <label for="Péssimo">Péssimo</label><br><br>
       
       <label for="Como você avalia o apoio Governo Federal aos municípios no combate ao COVID-19?"><b>Como você avalia o apoio Governo Federal aos municípios no combate ao COVID-19?</b></label><br><br>
-      <input type="radio" id="Ótimo" name="apoio" value="Ótimo">
+      <input type="radio" id="Ótimo" name="apoio" value="Ótimo" <%= details.apoio == 'Ótimo' ? 'checked' : '' %>>
       <label for="Ótimo">Ótimo</label><br>
-      <input type="radio" id="Regular" name="apoio" value="Regular">
+      <input type="radio" id="Regular" name="apoio" value="Regular" <%= details.apoio == 'Regular' ? 'checked' : '' %>>
       <label for="Regular">Regular</label><br>
-      <input type="radio" id="Péssimo" name="apoio" value="Péssimo">
+      <input type="radio" id="Péssimo" name="apoio" value="Péssimo" <%= details.apoio == 'Péssimo' ? 'checked' : '' %>>
       <label for="Péssimo">Péssimo</label><br><br>
 
       <label for="Como você a postura do Presidente da República durante a pandemina de COVID-19?"><b>Como você a postura do Presidente da República durante a pandemina de COVID-19?</b></label><br><br>
-      <input type="radio" id="Ótimo" name="postura" value="Ótimo">
+      <input type="radio" id="Ótimo" name="postura" value="Ótimo" <%= details.postura == 'Ótimo' ? 'checked' : '' %>>
       <label for="Ótimo">Ótimo</label><br>
-      <input type="radio" id="Regular" name="postura" value="Regular">
+      <input type="radio" id="Regular" name="postura" value="Regular" <%= details.postura == 'Regular' ? 'checked' : '' %>>
       <label for="Regular">Regular</label><br>
-      <input type="radio" id="Péssimo" name="postura" value="Péssimo">
+      <input type="radio" id="Péssimo" name="postura" value="Péssimo" <%= details.postura == 'Péssimo' ? 'checked' : '' %>>
       <label for="Péssimo">Péssimo</label><br><br>
       <br />
       <button><a href="/show">Todos</a></button>
