@@ -9,10 +9,10 @@
   <h2>Insira os seus dados e nos ajude a avaliar atuação do Governo Federal no combate ao COVID-19<h2>
     <p><form action="/show" method="POST">
         <label for="Nome">Nome</label><br>
-        <input type="text" placeholder="Nome" name="name"><br><br>
+        <input type="text" placeholder="Nome" name="name" required><br><br>
         <label for="Sobrenome">Sobrenome</label><br>
         
-        <input type="text" placeholder="Sobrenome" name="surname"><br><br>
+        <input type="text" placeholder="Sobrenome" name="surname" required><br><br>
         <label for="Genero">Genero</label><br>
         
         <input type="radio" id="Homem" name="gender" value="Homem">
@@ -25,22 +25,22 @@
         <label for="Outro">Outro</label><br><br>
         
         <label for="datanascimento">Data de nascimento</label><br>
-        <input type="date" id="Data" name="datanascimento"><br><br>
+        <input type="date" id="Data" name="datanascimento" required><br><br>
         
         <label for="idade">Idade</label><br>
-        <input type="text" placeholder="Idade" name="idade"><br><br>
+        <input type="text" placeholder="Idade" name="idade" required><br><br>
        
         <label for="email">Email</label><br>
-        <input type="email" placeholder="Email" name="email"><br><br>
+        <input type="email" placeholder="Email" name="email" required><br><br>
         
         <label for="endereco">Endereco</label><br>
-        <input type="text" placeholder="Endereco" name="endereco"><br><br>
+        <input type="text" placeholder="Endereco" name="endereco" required><br><br>
        
         <label for="telefone">Telefone</label><br>
-        <input type="text" placeholder="Telefone" name="telefone"><br><br>
+        <input type="text" placeholder="Telefone" name="telefone" required><br><br>
        
         <label for="profissao">Profissão</label><br>
-        <input type="text" placeholder="Profissao" name="profissao"><br><br>
+        <input type="text" placeholder="Profissao" name="profissao" required><br><br>
 
         <label for="Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?">Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19??</label><br><br>
         <input type="radio" id="Ótimo" name="medidas" value="Ótimo">

@@ -10,9 +10,9 @@
   <% data.forEach(function(details) { %>
     <form action="/edit/<%= details._id %>" method="POST">
       <label for="Nome"><b>Nome</b></label><br>
-      <input type="text" value="<%= details.name %>" name="name"><br><br>
+      <input type="text" value="<%= details.name %>" name="name" required><br><br>
       <label for="Sobrenome"><b>Sobrenome</b></label><br>
-      <input type="text" value="<%= details.surname %>" name="surname"><br><br>
+      <input type="text" value="<%= details.surname %>" name="surname" required><br><br>
       <label for="Genero"><b>Genero</b></label><br>
       <input type="radio" id="Homem" name="gender" value="Homem" <%= details.gender == 'Homem' ? 'checked' : '' %>  >
       <label for="Homem">Homem</label><br>
@@ -22,22 +22,22 @@
       <label for="Outro">Outro</label><br><br>
       
       <label for="idade"><b>Idade</b></label><br>
-      <input type="text" value="<%= details.idade %>" name="idade"><br><br>
+      <input type="text" value="<%= details.idade %>" name="idade" required><br><br>
      
       <label for="email"><b>Email</b></label><br>
-      <input type="email" value="<%= details.email %>" name="email"><br><br>
+      <input type="email" value="<%= details.email %>" name="email" required><br><br>
     
       <label for="endereco"><b>Endereco</b></label><br>
-      <input type="text" value="<%= details.endereco %>" name="endereco"><br><br>
+      <input type="text" value="<%= details.endereco %>" name="endereco" required><br><br>
       
       <label for="telefone"><b>Telefone</b></label><br>
-      <input type="text" value="<%= details.telefone %>" name="telefone"><br><br>
+      <input type="text" value="<%= details.telefone %>" name="telefone" required><br><br>
 
       <label for="profissao"><b>Profissao</b></label><br>
-      <input type="text" value="<%= details.profissao %>" name="profissao"><br><br>
+      <input type="text" value="<%= details.profissao %>" name="profissao" required><br><br>
 
       <label for="datanascimento"><b>Data de nascimento</b></label><br>
-      <input type="date" value="<%= details.datanascimento %>" name="datanascimento"><br><br>
+      <input type="date" value="<%= details.datanascimento %>" name="datanascimento" required><br><br>
       
       <label for="Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?"><b>Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?</b></label><br><br>
       <input type="radio" id="Ótimo" name="medidas" value="Ótimo" <%= details.medidas == 'Ótimo' ? 'checked' : '' %>>
@@ -76,7 +76,7 @@
       <label for="Ótimo">Ótimo</label><br>
       <input type="radio" id="Regular" name="postura" value="Regular" <%= details.postura == 'Regular' ? 'checked' : '' %>>
       <label for="Regular">Regular</label><br>
-      <input type="radio" id="Péssimo" name="postura" value="Péssimo" <%= details.postura == 'Péssimo' ? 'checked' : '' %>>
+      <input type="radio" id="Péssimo" name="postura" value="Péssimo"<%= details.postura == 'Péssimo' ? 'checked' : '' %>>
       <label for="Péssimo">Péssimo</label><br><br>
       <br />
       <button><a href="/show">Todos</a></button>
