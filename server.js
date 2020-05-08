@@ -60,7 +60,7 @@ app.route('/edit/:id')
   var id = req.params.id
   var name = req.body.name
   var surname = req.body.surname
-  var datanascimento= req.body.idade
+  var datanascimento= req.body.datanascimento
   var gender = req.body.gender
   var idade = req.body.idade
   var email= req.body.email

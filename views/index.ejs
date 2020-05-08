@@ -24,8 +24,9 @@
         <input type="radio" id="Outro" name="gender" value="Outro">
         <label for="Outro">Outro</label><br><br>
         
-        <label for="datanascimento">Data de nascimento</label><br>
-        <input type="date" id="Data" name="datanascimento" required><br><br>
+        <label for="datanascimento">Data de Nascimento:</label><br>
+        <input type="date" id="datanascimento" name="datanascimento" required min="1900-05-08" max="2002-05-08"><br>
+        <span class="validity"></span>
         
         <label for="idade">Idade</label><br>
         <input type="text" placeholder="Idade" name="idade" required><br><br>

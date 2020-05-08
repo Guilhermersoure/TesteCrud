@@ -21,6 +21,9 @@
       <input type="radio" id="Outro" name="gender" value="Outro" <%= details.gender == 'Outro' ? 'checked' : '' %>>
       <label for="Outro">Outro</label><br><br>
       
+      <label for="datanascimento">Data de Nascimento:</label><br>
+      <input type="date" value="<%= details.datanascimento %>" name="datanascimento" min="1900-05-08" max="2002-05-08" required><br><br
+      
       <label for="idade"><b>Idade</b></label><br>
       <input type="text" value="<%= details.idade %>" name="idade" required><br><br>
      
@@ -36,9 +39,8 @@
       <label for="profissao"><b>Profissao</b></label><br>
       <input type="text" value="<%= details.profissao %>" name="profissao" required><br><br>
 
-      <label for="datanascimento"><b>Data de nascimento</b></label><br>
-      <input type="date" value="<%= details.datanascimento %>" name="datanascimento" required><br><br>
       
+     
       <label for="Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?"><b>Como você avalia as medidas tomadas pelo Governo Federal no combate ao COVID-19?</b></label><br><br>
       <input type="radio" id="Ótimo" name="medidas" value="Ótimo" <%= details.medidas == 'Ótimo' ? 'checked' : '' %>>
       <label for="Ótimo">Ótimo</label><br>
